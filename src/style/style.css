@@ -131,7 +131,6 @@ nav {
 
 .section {
   width: 1180px;
-  height: 442.78px;
   margin: 50px auto;
 }
 
@@ -367,7 +366,6 @@ span {
 footer {
   position: relative;
   margin-bottom: 100px;
-  background-color: rgba(236, 235, 255, 0.6);
 }
 .link > ul > li {
   font-family: "Open Sans";
@@ -389,7 +387,6 @@ footer {
 
 .link {
   display: flex;
-  flex-direction: row;
   align-items: flex-start;
   width: 900px;
   height: 212.55px;
@@ -401,9 +398,7 @@ footer {
 
 .footer-bottom {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
   padding: 0px;
   gap: 948px;
   position: absolute;
@@ -418,4 +413,431 @@ footer {
   font-size: 12px;
   line-height: 16px;
   color: #9893a3;
+}
+
+@media (max-width: 480px) {
+  * {
+    height: auto;
+    /* margin: 0 auto; */
+  }
+
+  body {
+    width: 480px;
+    padding: 4px;
+  }
+
+  nav {
+    width: 400px;
+    margin: 0;
+  }
+  nav a {
+    display: none;
+  }
+  nav button {
+    display: none;
+  }
+  .logo {
+    margin: 0;
+  }
+
+  .section {
+    padding: 4px;
+    width: 400px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .logo-container {
+    width: 480px;
+    margin-bottom: 70px;
+  }
+
+  .logos {
+    width: 350px;
+    gap: 5px;
+  }
+
+  .price {
+    width: 480px;
+    margin: 0 auto;
+  }
+  .heading {
+    width: 480px;
+    height: auto;
+    gap: 20px;
+    justify-content: left;
+    flex-wrap: wrap;
+  }
+
+  .info {
+    width: 300px;
+    height: auto;
+    justify-content: center;
+  }
+  .contact {
+    width: 480px;
+  }
+  footer {
+    top: 150px;
+    height: auto;
+  }
+  .link {
+    width: 480px;
+    position: unset;
+    justify-content: unset;
+  }
+  .footer-bottom {
+    width: 480px;
+    gap: 100px;
+    top: 350px;
+    left: 0;
+  }
+
+  .flexbox {
+    flex-wrap: wrap;
+  }
+  .img-width {
+    width: 480px;
+  }
+}
+@media (max-width: 768px) and (min-width: 481px) {
+  * {
+    height: auto;
+    /* margin: 0 auto; */
+  }
+
+  body {
+    width: 768px;
+  }
+
+  header {
+    padding: 6px;
+  }
+
+  nav {
+    width: 700px;
+    /* justify-content: left; */
+  }
+  nav a {
+    display: none;
+  }
+  nav button {
+    /* display: none; */
+  }
+  .logo {
+    margin: none;
+  }
+
+  .section {
+    padding: 4px;
+    width: 768px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .img-width {
+    width: 768px;
+  }
+
+  .logo-container {
+    width: 768px;
+  }
+
+  .logos {
+    width: 600px;
+    margin: 50px auto;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .price {
+    width: 768px;
+    /* margin: 0 auto; */
+  }
+  .price div {
+    width: 768px;
+  }
+  .heading {
+    width: 768px;
+    margin: none;
+    height: auto;
+    gap: 20px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .info {
+    width: 768px;
+    height: auto;
+    justify-content: center;
+  }
+
+  .contact {
+    width: 600px;
+  }
+  footer {
+    top: 150px;
+    height: auto;
+  }
+  .link {
+    width: 768px;
+    position: unset;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+  }
+  .footer-bottom {
+    width: 768px;
+    position: absolute;
+    gap: 100px;
+    left: 0;
+  }
+
+  .flexbox {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 1024px) and (min-width: 769px) {
+  * {
+    height: auto;
+    /* margin: 0 auto; */
+  }
+
+  body {
+    width: 1024px;
+  }
+
+  header {
+    padding: 6px;
+  }
+
+  nav {
+    width: 950px;
+    /* justify-content: left; */
+    margin: 0 auto;
+  }
+  nav a {
+    display: none;
+  }
+  nav button {
+    /* display: none; */
+  }
+  .logo {
+    margin: none;
+  }
+
+  .section {
+    padding: 4px;
+    width: 1024px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .img-width {
+    width: 400px;
+  }
+
+  .logo-container {
+    width: 1024px;
+  }
+
+  .logos {
+    width: 900px;
+    margin: 50px auto;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .price {
+    width: 1024px;
+    /* margin: 0 auto; */
+  }
+  .container {
+    width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    grid-template-rows: repeat(2, 500px);
+    grid-gap: 50px;
+  }
+
+  .grid-left {
+    grid-column-start: 1;
+    justify-self: center;
+  
+  }
+  .grid-right {
+    grid-column-start: 2;
+    justify-self: center;
+  }
+
+  .center-div {
+    grid-row-start: 2;
+    grid-column-start: span 2;
+    justify-self: center;
+  }
+
+  .heading {
+    width: 1024px;
+    margin: none;
+    height: auto;
+    gap: 20px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .info {
+    /* padding: 8px; */
+    width: 1024px;
+    height: auto;
+    flex-wrap: wrap;
+    /* gap: 40px; */
+    justify-content: center;
+  }
+
+  .contact {
+    width: 900px;
+  }
+  footer {
+    top: 150px;
+    height: auto;
+  }
+  .link {
+    width: 1024px;
+    position: unset;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+  }
+  .footer-bottom {
+    width: 1024px;
+    position: absolute;
+    gap: 100px;
+    left: 0;
+  }
+
+  .flexbox {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 1200px) and (min-width: 1025px) {
+  * {
+    height: auto;
+    /* margin: 0 auto; */
+  }
+
+  body {
+    width: 1024px;
+  }
+
+  header {
+    padding: 6px;
+  }
+
+  nav {
+    width: 950px;
+    /* justify-content: left; */
+    margin: 0 auto;
+  }
+  nav a {
+    display: none;
+  }
+  nav button {
+    /* display: none; */
+  }
+  .logo {
+    margin: none;
+  }
+
+  .section {
+    padding: 4px;
+    width: 1024px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .img-width {
+    width: 400px;
+  }
+
+  .logo-container {
+    width: 1024px;
+  }
+
+  .logos {
+    width: 900px;
+    margin: 50px auto;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .price {
+    width: 1024px;
+    /* margin: 0 auto; */
+  }
+  .container {
+    width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    grid-template-rows: repeat(2, 500px);
+    grid-gap: 50px;
+  }
+
+  .grid-left {
+    grid-column-start: 1;
+    justify-self: center;
+  
+  }
+  .grid-right {
+    grid-column-start: 2;
+    justify-self: center;
+  }
+
+  .center-div {
+    grid-row-start: 2;
+    grid-column-start: span 2;
+    justify-self: center;
+  }
+
+  .heading {
+    width: 1024px;
+    margin: none;
+    height: auto;
+    gap: 20px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .info {
+    width: 1024px;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 180px;
+  }
+  
+  
+
+  .contact {
+    width: 900px;
+  }
+  footer {
+    top: 150px;
+    height: auto;
+  }
+  .link {
+    width: 1024px;
+    position: unset;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+  }
+  .footer-bottom {
+    width: 1024px;
+    position: absolute;
+    gap: 100px;
+    left: 0;
+  }
+
+  .flexbox {
+    flex-wrap: wrap;
+  }
 }
